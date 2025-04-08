@@ -26,6 +26,7 @@ public class TrabalhoController {
     @PostMapping
     public ResponseEntity<Trabalho> novo(@RequestBody Trabalho trabalho)
     {
+        trabalho.fillDefaults();
         return ResponseEntity.ok(service.novo(trabalho));
     }
 
