@@ -56,6 +56,11 @@ public class Trabalho
 
     public void setDataHoraEntrega(LocalDateTime dataHoraEntrega)
     {
+        if (dataHoraEntrega == null)
+        {
+            dataHoraEntrega = LocalDateTime.now();
+        }
+        
         this.dataHoraEntrega = dataHoraEntrega;
     }
 
