@@ -27,7 +27,7 @@ public class TrabalhoService {
         return repo.save(trabalho);
     }
 
-    public List<Trabalho> findAll()
+    public List<Trabalho> buscarTodos()
     {
         return repo.findAll();
     }
