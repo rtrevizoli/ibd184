@@ -31,7 +31,7 @@ public class Trabalho
     private String grupo;
 
     @Column(name = "tra_nota")
-    private int nota;
+    private Integer nota;
 
     @Column(name = "tra_justificativa")
     private String justificativa;
@@ -62,5 +62,15 @@ public class Trabalho
     public LocalDateTime getDataHoraEntrega()
     {
         return dataHoraEntrega;
+    }
+
+    public void setGrupo(String grupo)
+    {
+        this.grupo = grupo;
+    }
+
+    public String getGrupo()
+    {
+        return grupo;
     }
 }
