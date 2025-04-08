@@ -8,5 +8,5 @@ import edu.fatec.ibd184.entity.Trabalho;
 
 public interface TrabalhoRepository extends JpaRepository<Trabalho, Long>
 {
-    public List<Trabalho> findByTituloContainingIgnoreCaseAndNotaGreaterThan(String palavra, int notaMinima);
+    public List<Trabalho> findByTituloContainingIgnoreCaseAndNotaGreaterThan(String palavra, Integer notaMinima);
 }

@@ -31,5 +31,10 @@ public class TrabalhoService {
     {
         return repo.findAll();
     }
+
+    public List<Trabalho> findByTituloContainingIgnoreCaseAndNotaGreaterThan(String palavra, Integer notaMinima)
+    {
+        return repo.findByTituloContainingIgnoreCaseAndNotaGreaterThan(palavra, notaMinima);
+    }
     
 }
