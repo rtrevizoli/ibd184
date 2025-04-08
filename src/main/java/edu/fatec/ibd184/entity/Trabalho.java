@@ -8,7 +8,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Data;
 
+@Data
 @Entity
 @Table(name = "tra_trabalho")
 public class Trabalho
@@ -44,16 +46,6 @@ public class Trabalho
 
     public Trabalho() {}
 
-    public void setTitulo(String titulo)
-    {
-        this.titulo = titulo;
-    }
-
-    public String getTitulo()
-    {
-        return titulo;
-    }
-
     public void setDataHoraEntrega(LocalDateTime dataHoraEntrega)
     {
         if (dataHoraEntrega == null)
@@ -64,18 +56,4 @@ public class Trabalho
         this.dataHoraEntrega = dataHoraEntrega;
     }
 
-    public LocalDateTime getDataHoraEntrega()
-    {
-        return dataHoraEntrega;
-    }
-
-    public void setGrupo(String grupo)
-    {
-        this.grupo = grupo;
-    }
-
-    public String getGrupo()
-    {
-        return grupo;
-    }
 }
