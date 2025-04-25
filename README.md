@@ -127,12 +127,12 @@ curl "http://localhost:8080/vaga/filtrar?palavra=CLT"
 curl "http://localhost:8080/vaga/filtrar?palavra=PJ"
 ```
 
-### 3.3 Only salarioMinimo as param
+### 3.3. Only salarioMinimo as param
 
 ```Shell
-$ curl "http://localhost:8080/vaga/filtrar?salarioMinimo=7"
+curl "http://localhost:8080/vaga/filtrar?salarioMinimo=7"
 ```
 
 ```Shell
-$ curl "http://localhost:8080/vaga/filtrar?salarioMinimo=123455
+curl "http://localhost:8080/vaga/filtrar?salarioMinimo=123455
 ```
